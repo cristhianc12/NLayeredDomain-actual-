@@ -4,7 +4,7 @@ using System.Data.Entity;
 
 namespace Data.Persistence.Core
 {
-    interface IWorkUnitContext : IWorkUnit, IDisposable
+    public interface IWorkUnitContext : IWorkUnit, IDisposable
     {
         IDbSet<House> Houses { get; }
         IDbSet<Entity> Set<Entity>() where Entity : class;

@@ -13,7 +13,8 @@ namespace Domain.Core
 
         Entity Get(int Id);//SELECT * FROM House WHERE HouseID = ID
         IEnumerable<Entity> GetAll();
-        IEnumerable<Entity> FindSingleOrDefault(Expression<Func<Entity, bool>> predicate);
+        IEnumerable<Entity> Find(Expression<Func<Entity, bool>> predicate);
+        Entity FindSingleOrDefault(Expression<Func<Entity, bool>> predicate);
 
         void Add(Entity entity);
 
