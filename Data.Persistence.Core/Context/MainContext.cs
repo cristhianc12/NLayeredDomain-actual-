@@ -23,7 +23,7 @@ namespace Data.Persistence.Core
             get { return _house ?? (_house = base.Set<House>());  }
         }
 
-        public new IDbSet<Entity> Set<Entity>() where Entity : class
+        public new IDbSet<Entity> Set<Entity>() where Entity : class 
         {
             return base.Set<Entity>();
         }
